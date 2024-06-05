@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML and Server/Technology Implementation</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        input[type=text] {
+            width: 95%;
+            /* margin: 32px 10px; */
+            height: 24px;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            height: 60px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .invisible {
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<header>
+    <h3>
+        HTML and Server/Technology Implementation
+    </h3>
+    <hr>
+</header>
+
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <form action="http://itec315.frostburg.edu/users/mflinn/630/handler.php" method="post">
+                    <table>
+                        <tr class="invisible">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 3</td>
+                            <td colspan="2">Cell spanning two columns</td>
+                            <td>Cell 4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <h1>Information Collection</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    First Name
+                                    <br>
+                                    <input type="text" name="firstName">
+                                </p>
+                            </td>
+                            <td colspan="2">
+                                <p>
+                                    Last Name
+                                    <br>
+                                    <input type="text" name="lastName">
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <p>
+                                    Address
+                                    <br>
+                                    <input type="text" name="address">
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    City
+                                    <br>
+                                    <input type="text" name="city">
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    State
+                                    <br>
+                                    <input type="text" name="state">
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Zip Code
+                                    <br>
+                                    <input type="text" name="zipCode">
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">
+                                <label for="colors">Favorite Color</label>
+                                <select name="colors" id="colors">
+                                    <option value="Red">Red</option>
+                                    <option value="Orange">Orange</option>
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="Green">Green</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Indigo">Indigo</option>
+                                    <option value="Violet">Violet</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Favorite Day of the Week
+                                <br>
+                                <input type="radio" name="day" value="monday" id="monday">
+                                <label for="monday">Mon</label>
+                                <input type="radio" name="day" value="tuesday" id="tuesday">
+                                <label for="tuesday">Tues</label>
+                                <input type="radio" name="day" value="wednesday" id="wednesday">
+                                <label for="wednesday">Wed</label>
+                                <input type="radio" name="day" value="thursday" id="thursday">
+                                <label for="thursday">Thurs</label>
+                                <input type="radio" name="day" value="friday" id="friday">
+                                <label for="friday">Fri</label>
+                                <input type="radio" name="day" value="saturday" id="saturday">
+                                <label for="saturday">Sat</label>
+                                <input type="radio" name="day" value="sunday" id="sunday">
+                                <label for="sunday">Sun</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><input type="submit" name="submit" value="Submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+            <td><img src="me.jpg" width="50%" height="50%"></td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+<footer>
+    <hr>
+    <table style="width: 100%;">
+        <tr>
+            <td><img src="FSUlogo.png" alt=""></td>
+            <td>
+                <table style="height: 100%;">
+                    <tr>
+                        <td>Other pages</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="https://www.peterh.net/">peterh.net</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</footer>
+
+</html>

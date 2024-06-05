@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Layout with Invisible Row</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Invisible row defining four columns -->
+        <tr class="invisible">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <!-- Visible rows -->
+        <tr>
+            <td colspan="2">Cell spanning two columns</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+        <tr>
+            <td colspan="2">Cell spanning two columns</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+        <tr>
+            <td colspan="2">Cell spanning two columns</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+    </table>
+</body>
+</html>
