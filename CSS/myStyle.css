@@ -1,0 +1,140 @@
+#rcorners{
+    border-radius: 8px;
+    border: 10px solid black;
+    padding: 10px;
+}
+
+
+
+a:link, a:visited{
+    background-color: red;
+    color: aquamarine;
+    border: 10px solid green;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+}
+
+a:hover, a:active{
+    background-color: blue;
+    text-decoration: dashed;
+    color: antiquewhite;
+}
+
+body {
+    font-family: sans-serif;
+    /* font-size: 12px; */
+}
+
+hr {
+    border: 1px solid rgb(220, 220, 220);
+    color: violet
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    font-size: small;
+    height: 657px;
+    width: 592px;
+    column-gap: 24px;
+    align-content: space-between;
+    /* Distribute space evenly, with first and last items aligned to top and bottom */
+}
+
+.dayContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0px;
+}
+
+.conatiner2x1 {
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* Ensuring the container has the same height as the image */
+    height: 657px;
+}
+
+.conatiner2x1HF {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.item {
+
+    /* text-align: start; */
+    /* border: 1px solid black; */
+
+}
+
+table {
+    width: 40%;
+    margin-left: 60%;
+}
+
+.itemRightJustify {
+    text-align: right;
+    /* align-items: right;
+    align-content: right; */
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-4 {
+    grid-column: span 4;
+}
+
+
+
+.informationCollection {
+    margin-bottom: -50px;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 48px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+input[type=reset] {
+    width: 100%;
+}
+
+#favNumber {
+    margin-top: 10px;
+}
+
+#colors {
+    margin-top: 10px;
+}
