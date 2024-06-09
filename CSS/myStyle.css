@@ -1,38 +1,45 @@
-#rcorners{
+#rcorners {
     border-radius: 8px;
     border: 10px solid black;
-    padding: 10px;
+
 }
-
-
 
 a:link, a:visited{
-    background-color: red;
-    color: aquamarine;
-    border: 10px solid green;
-    text-decoration: none;
     display: inline-block;
-    float: right;
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
 }
 
-a:hover, a:active{
-    background-color: blue;
+
+a:hover,
+a:active {
+    background-color: rgb(215, 215, 215);
     text-decoration: dashed;
-    color: antiquewhite;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+header{
+    margin-bottom: 9em;
 }
 
 body {
     font-family: sans-serif;
+    padding: 4em;
     /* font-size: 12px; */
 }
 
+footer{
+    margin-top: 11em;
+}
+
 hr {
-    border: 1px solid rgb(220, 220, 220);
-    color: violet
+    border: 1px solid rgb(246, 246, 246);
+    
 }
 
 h1 {
-    padding: 0px;
     margin: 0px;
     font-size: 48px;
     font-weight: bold;
@@ -43,9 +50,10 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     gap: 0px;
     font-size: small;
-    height: 657px;
-    width: 592px;
-    column-gap: 24px;
+    /* height: 657px; */
+    width: 40em;
+    min-width: 40em;
+    column-gap: 2em;
     align-content: space-between;
     /* Distribute space evenly, with first and last items aligned to top and bottom */
 }
@@ -53,17 +61,13 @@ h1 {
 .dayContainer {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 0px;
+
 }
 
 .conatiner2x1 {
     display: flex;
     align-items: stretch;
     gap: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 100px;
-    padding-bottom: 100px;
     /* Ensuring the container has the same height as the image */
     height: 657px;
 }
@@ -72,8 +76,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
+
 }
 
 .item {
@@ -83,10 +86,12 @@ h1 {
 
 }
 
-table {
-    width: 40%;
-    margin-left: 60%;
+.menuIcon {
+    font-size: xx-large;
+    cursor: pointer;
+    padding: 0.5em;
 }
+
 
 .itemRightJustify {
     text-align: right;
@@ -137,4 +142,9 @@ input[type=reset] {
 
 #colors {
     margin-top: 10px;
+}
+
+#me {
+    width: 100%;
+    max-height: 657px;
 }
