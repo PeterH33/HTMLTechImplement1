@@ -19,7 +19,15 @@
 </header>
 
 <body>
-    
+    <p>This page has the javascript from excercise 21-2 active. Check out the title for 3 new messages!</p>
+    <script>
+		var originalTitle = document.title;
+		function showUnreadCount(unread) {
+			document.title = originalTitle + " (" + unread + ") new messages!";
+		}
+		// Your code goes here!
+		showUnreadCount(3);
+	</script>
     
     
     
