@@ -31,5 +31,9 @@
     print"I know this because I am a robot and you are a soft flesh creature";
 
 
+    //random test of print as a variable assignment
+    $printMe = print("Printing a variable? Or perhaps just true.");
+    echo $printMe;
+
     ?>
 </html>
