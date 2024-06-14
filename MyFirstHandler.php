@@ -18,7 +18,7 @@
 
 
     //processing
-    $tense = $favNumber > 1 ? "candies" : "candies";
+    $tense = $favNumber >= 2 ? "candies" : "candies";
 
 
     //output
