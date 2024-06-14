@@ -33,7 +33,9 @@
 
     //random test of print as a variable assignment
     $printMe = print("Printing a variable? Or perhaps just true.<br>");
-    echo $printMe;
-    $printMe
+    echo $printMe; //This line will print out the above statement
+    $printMe //This version returns 1, which I am assuming is basically True, neat!
+
+    
     ?>
 </html>
