@@ -21,7 +21,8 @@
     $tense = (int)$favNumber > 1 ? "candies" : "candy";
 
     //output
-    This is just me typing out words, what does it do?
+    echo"This is just me typing out words, what does it do?";
+    print"Another line just like echo, what is the difference?";
     echo"<pre>"; //the <pre> tag causes white space to be preserved, so I get the spacing for the address correct.
     print"Hello $firstName $lastName<br><br>";
     print"of: $address<br>";
