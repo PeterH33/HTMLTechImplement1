@@ -18,14 +18,14 @@
 
 
     //processing
-
+    $tense = $favNumber > 1 ? "candies" : "candies";
 
 
     //output
     print"Hello $firstName $lastName<br><br>";
     print"of: $address<br>";
     print"    $city, $state $zipCode<br><br>";
-    print"You would love $favNumber $colors candies on a $day.<br>";
+    print"You would love $favNumber $colors $tense on a $day.<br>";
     print"I know this because I am a robot and you are a soft flesh creature";
 
 
