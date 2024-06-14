@@ -19,7 +19,7 @@
 
     //processing
     $tense = (int)$favNumber >= 2 ? "candies" : "candies";
-    $tense = "Bawk";
+    print"<br>$favNumber<br>";
 
     //output
     print"Hello $firstName $lastName<br><br>";
