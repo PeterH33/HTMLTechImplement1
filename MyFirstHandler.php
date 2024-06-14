@@ -28,12 +28,12 @@
     print"of: $address<br>";
     print"    $city, $state $zipCode<br><br>";
     print"You would love $favNumber $colors $tense on a $day.<br>";
-    print"I know this because I am a robot and you are a soft flesh creature";
+    print"I know this because I am a robot and you are a soft flesh creature.<br><br>";
 
 
     //random test of print as a variable assignment
-    $printMe = print("Printing a variable? Or perhaps just true.");
+    $printMe = print("Printing a variable? Or perhaps just true.<br>");
     echo $printMe;
-
+    $printMe
     ?>
 </html>
