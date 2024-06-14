@@ -21,6 +21,7 @@
     $tense = (int)$favNumber > 1 ? "candies" : "candy";
 
     //output
+    echo"<pre>";
     print"Hello $firstName $lastName<br><br>";
     print"of: $address<br>";
     print"    $city, $state $zipCode<br><br>";
