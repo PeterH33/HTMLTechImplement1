@@ -14,6 +14,10 @@ $day = $_POST['day'];
 
 //processing
 $tense = (int)$favNumber > 1 ? "candies" : "candy";
+
+//Experimenting with the layout of a blended php html paper. 
+//I think I like this layout better
+//Output below in html
 ?>
 
 
@@ -23,7 +27,7 @@ $tense = (int)$favNumber > 1 ? "candies" : "candy";
 <html>
 <link rel="stylesheet" href="CSS/myStyle.css">
     <header>
-        <?= $firstName, $lastName; ?>
+        <?= $firstName; ?>
         <br>
         <h1>
         Plain words
