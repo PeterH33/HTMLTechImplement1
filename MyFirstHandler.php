@@ -1,8 +1,8 @@
 
 <?php
 //I bet that there is a way to make the input section conditional based on if there is input
-$firstName = John;
-$lastName = Doe;
+$firstName = 'John';
+$lastName = 'Doe';
 //input
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $firstName = $_POST['firstName'];
