@@ -1,6 +1,6 @@
 
 <?php
-//I bet that there is a way to make the input section conditional based on if there is input
+//I bet that there is a way to make the input section conditional based on if there is input, and there is! Thsi works fine
 //Default values
     $firstName = "Uncle";
     $lastName = "Bob";
@@ -28,50 +28,26 @@
     $tense = (int)$favNumber > 1 ? "candies" : "candy";
 
 //Experimenting with the layout of a blended php html paper. 
-//I think I like this layout better
-//Output below in html
+//I think I like this layout better, it lets VSCodes auto complete continue working
+
 ?>
 
 
-
-
-
+<!-- Output -->
 <html>
 <link rel="stylesheet" href="CSS/myStyle.css">
     <header>
-        <?= $firstName, $lastName; ?>
-        <br>
         <h1>
-        Plain words
+        <?= $firstName, $lastName; ?>
         </h1> 
     </header>
     
     <body>
         body
     </body>
-    <!-- //output
-    echo"This is just me typing out words, what does it do?";
-    print"Another line just like echo, what is the difference?";
-    echo"<pre>"; //the <pre> tag causes white space to be preserved, so I get the spacing for the address correct.
-        print"Hello $firstName $lastName<br><br>";
-        print"of: $address<br>";
-        print"    $city, $state $zipCode<br><br>";
-        print"You would love $favNumber $colors $tense on a $day.<br>";
-        print"I know this because I am a robot and you are a soft flesh creature.<br><br>";
-        
-        //output testing wrapping html in an echo line
-        echo "
-        
-        
-        ";
-        
-        
-        //random test of print as a variable assignment
-        $printMe = print("Printing a variable? Or perhaps just true.<br>");
-        echo $printMe; //This line will print out the above statement
-        $printMe //This version returns 1, which I am assuming is basically True, neat! -->
-        <footer>
-            Footer
-        </footer>
+    
+    <footer>
+        Footer
+    </footer>
         
 </html>
