@@ -1,16 +1,20 @@
 
 <?php
-print_r($_POST);
+//I bet that there is a way to make the input section conditional based on if there is input
+$firstName = John;
+$lastName = Doe;
 //input
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
-$address = $_POST['address'];
-$city = $_POST['city'];
-$state = $_POST['state'];
-$zipCode = $_POST['zipCode'];
-$colors = $_POST['colors'];
-$favNumber = $_POST['favNumber'];
-$day = $_POST['day'];
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $address = $_POST['address'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zipCode = $_POST['zipCode'];
+    $colors = $_POST['colors'];
+    $favNumber = $_POST['favNumber'];
+    $day = $_POST['day'];
+}
 
 //processing
 $tense = (int)$favNumber > 1 ? "candies" : "candy";
