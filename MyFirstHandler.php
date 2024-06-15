@@ -1,4 +1,5 @@
 <html>
+<link rel="stylesheet" href="CSS/myStyle.css">
 <head>
     <h1>First Form Handler</h1>
 </head>
