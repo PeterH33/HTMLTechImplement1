@@ -38,38 +38,38 @@
                 <div class="item span-2">
                     First Name
                     <br>
-                    <input type="text" name="firstName" id="firstName">
+                    <input type="text" name="firstName" id="firstName" required>
                 </div>
                 <div class="item span-2">
                     Last Name
                     <br>
-                    <input type="text" name="lastName" id="lastName">
+                    <input type="text" name="lastName" id="lastName" required>
                 </div>
                 <div class="item span-4">
                     Address
                     <br>
-                    <input type="text" name="address" id="address">
+                    <input type="text" name="address" id="address" required>
                 </div>
                 <div class="item span-2">
                     City
                     <br>
-                    <input type="text" name="city" id="city">
+                    <input type="text" name="city" id="city" required>
                 </div>
                 <div class="item">
                     State
                     <br>
-                    <input type="text" name="state" id="state">
+                    <input type="text" name="state" id="state" required>
                 </div>
                 <div class="item">
                     Zip Code
                     <br>
-                    <input type="text" name="zipCode" id="zipCode">
+                    <input type="text" name="zipCode" id="zipCode" required>
                 </div>
                 <div class="item span-2">
                     Favorite Color
                     <br>
                     <!-- <label for="colors">Favorite Color</label> -->
-                    <select name="colors" id="colors">
+                    <select name="colors" id="colors" required>
                         <option value="" disabled selected>Select a color</option>
                         <option value="Red">Red</option>
                         <option value="Orange">Orange</option>
@@ -83,7 +83,7 @@
                 <div class="item span-2">
                     Favorite number
                     <br>
-                    <input type="number" name="favNumber" id="favNumber">
+                    <input type="number" name="favNumber" id="favNumber" required>
                 </div>
                 <div class="item span-4">
                     Favorite Day of the Week
