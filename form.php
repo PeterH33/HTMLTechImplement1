@@ -90,7 +90,7 @@
                 </div>
                 <div class="item span-4">
                     <div class="dayContainer">
-                        <div class="item"><input type="radio" name="day" value="monday" id="mondayb">
+                        <div class="item"><input type="radio" name="day" value="monday" id="mondayb" required>
                             <label for="monday">Mon</label>
                         </div>
 
