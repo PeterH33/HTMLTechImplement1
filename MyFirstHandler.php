@@ -27,7 +27,7 @@ $tense = (int)$favNumber > 1 ? "candies" : "candy";
 <html>
 <link rel="stylesheet" href="CSS/myStyle.css">
     <header>
-        <?= $firstName; ?>
+        <?= $firstName, $lastName; ?>
         <br>
         <h1>
         Plain words
