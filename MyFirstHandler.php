@@ -1,6 +1,6 @@
 
 <?php
-//I bet that there is a way to make the input section conditional based on if there is input, and there is! Thsi works fine
+//NOTE I bet that there is a way to make the input section conditional based on if there is input, and there is! Thsi works fine
 //Default values
     $firstName = "Uncle";
     $lastName = "Bob";
@@ -12,22 +12,23 @@
     $favNumber = "19970829";
     $day = "Friday";
 //input
+// NOTE we can use nil coalescing in PHP! Wonderful!
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
-        $firstName = $_POST['firstName'];
-        $lastName = $_POST['lastName'];
-        $address = $_POST['address'];
-        $city = $_POST['city'];
-        $state = $_POST['state'];
-        $zipCode = $_POST['zipCode'];
-        $colors = $_POST['colors'];
-        $favNumber = $_POST['favNumber'];
-        $day = $_POST['day'];
+        $firstName = $_POST['firstName'] ?? $firstName;
+        $lastName = $_POST['lastName'] ?? $lastName;
+        $address = $_POST['address'] ?? $address;
+        $city = $_POST['city'] ?? $city;
+        $state = $_POST['state'] ?? $state;
+        $zipCode = $_POST['zipCode'] ?? $zipCode;
+        $colors = $_POST['colors'] ?? $colors;
+        $favNumber = $_POST['favNumber'] ?? $favNumber;
+        $day = $_POST['day'] ?? $day;
     }
 
 //processing
     $tense = (int)$favNumber > 1 ? "candies" : "candy";
 
-//Experimenting with the layout of a blended php html paper. 
+//NOTE Experimenting with the layout of a blended php html paper. 
 //I think I like this layout better, it lets VSCodes auto complete continue working
 
 ?>
