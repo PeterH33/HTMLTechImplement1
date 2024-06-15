@@ -19,13 +19,15 @@ $tense = (int)$favNumber > 1 ? "candies" : "candy";
 
 
 
-<!DOCTYPE html>
-<html>
 
+<html>
+<link rel="stylesheet" href="CSS/myStyle.css">
     <header>
         <?= $firstName, $lastName; ?>
         <br>
+        <h1>
         Plain words
+        </h1> 
     </header>
     
     <body>
