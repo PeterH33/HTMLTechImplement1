@@ -38,32 +38,32 @@
                 <div class="item span-2">
                     First Name
                     <br>
-                    <input type="text" name="firstName">
+                    <input type="text" name="firstName" id="firstName">
                 </div>
                 <div class="item span-2">
                     Last Name
                     <br>
-                    <input type="text" name="lastName">
+                    <input type="text" name="lastName" id="lastName">
                 </div>
                 <div class="item span-4">
                     Address
                     <br>
-                    <input type="text" name="address">
+                    <input type="text" name="address" id="address">
                 </div>
                 <div class="item span-2">
                     City
                     <br>
-                    <input type="text" name="city">
+                    <input type="text" name="city" id="city">
                 </div>
                 <div class="item">
                     State
                     <br>
-                    <input type="text" name="state">
+                    <input type="text" name="state" id="state">
                 </div>
                 <div class="item">
                     Zip Code
                     <br>
-                    <input type="text" name="zipCode">
+                    <input type="text" name="zipCode" id="zipCode">
                 </div>
                 <div class="item span-2">
                     Favorite Color
@@ -129,10 +129,11 @@
             <div style="max-width: 40em;"><img src="me.jpg" id="me"></div>
         </div>
     </form>
+
 </body>
 
 <footer>
-    <hr>0
+    <hr>
 
     <div>
         <div>
