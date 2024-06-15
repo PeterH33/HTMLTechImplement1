@@ -1,23 +1,31 @@
 
 <?php
 //I bet that there is a way to make the input section conditional based on if there is input
-$firstName = 'John';
-$lastName = 'Doe';
+//Default values
+    $firstName = "Uncle";
+    $lastName = "Bob";
+    $address = "19828 Alerio St";
+    $city = "Winnetka";
+    $state = "California";
+    $zipCode = "91306";
+    $colors = "Red";
+    $favNumber = "19970829";
+    $day = "Friday";
 //input
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $address = $_POST['address'];
-    $city = $_POST['city'];
-    $state = $_POST['state'];
-    $zipCode = $_POST['zipCode'];
-    $colors = $_POST['colors'];
-    $favNumber = $_POST['favNumber'];
-    $day = $_POST['day'];
-}
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $address = $_POST['address'];
+        $city = $_POST['city'];
+        $state = $_POST['state'];
+        $zipCode = $_POST['zipCode'];
+        $colors = $_POST['colors'];
+        $favNumber = $_POST['favNumber'];
+        $day = $_POST['day'];
+    }
 
 //processing
-$tense = (int)$favNumber > 1 ? "candies" : "candy";
+    $tense = (int)$favNumber > 1 ? "candies" : "candy";
 
 //Experimenting with the layout of a blended php html paper. 
 //I think I like this layout better
