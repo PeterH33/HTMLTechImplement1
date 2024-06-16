@@ -54,17 +54,11 @@
             <div class="span-4">
                 <p><?=$city, ", ", $state, " ", $zipCode;?><p>
             </div>
-            <div class="span-2">
-                <p><?=$colors;?></p>
-            </div>
-            <div class="span-2">
-                <p><?=$favNumber;?></p>
-            </div>
             <div class="span-4">
-                <p><?=$day;?></p>
+                <p><?="An order of ", $favNumber, " ", $colors, " ", $tense, " shall be delivered on ", $day, ".<br>Enjoy your order human."?></p>
             </div>
             <div class="item span-4 ">
-                <input type="submit" name="submit" value="Edit">
+                <input type="submit" name="submit" value="Edit Order">
             </div>
         </div>
         
