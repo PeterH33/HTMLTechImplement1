@@ -97,6 +97,7 @@ hr {
 
 .metalBG{
     background-color: darkgray;
+    padding: 0.5em;
 }
 
 input[type=text] {
