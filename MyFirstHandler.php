@@ -42,12 +42,15 @@
     </head>
     <header>
         <h1>
-        <?= $firstName, " ", $lastName; ?>
+        Your Order <small>from Skynet</small>
         </h1> 
     </header>
     
     <body>
         <div class="container">
+            <div class="span-4">
+                <p><?= $firstName, " ", $lastName, " of:" ?></p>
+            </div>
             <div class="span-4">
                 <p><?=$address, "<br>", $city, ", ", $state, " ", $zipCode;?><p>
             </div>
