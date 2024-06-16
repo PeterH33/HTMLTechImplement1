@@ -35,6 +35,7 @@
 
 
 <!-- Output -->
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="CSS/myStyle.css">
