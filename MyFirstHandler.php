@@ -48,25 +48,25 @@
     <body>
         <div class="container">
             <div class="span-4">
-                <p><?=$address?></p>
+                <p><?=$address;?></p>
             </div>
             <div class="span-2">
-                <p><?=$city?><p>
+                <p><?=$city;?><p>
             </div>
             <div>
-                <p><?=$state?></p>
+                <p><?=$state;?></p>
             </div>
             <div>
-                <p><?=$zipCode?></p>
+                <p><?=$zipCode;?></p>
             </div>
             <div class="span-2">
-                <p><?=$colors?></p>
+                <p><?=$colors;?></p>
             </div>
             <div class="span-2">
-                <p><?=$favNumber?></p>
+                <p><?=$favNumber;?></p>
             </div>
             <div class="span-4">
-                <p><?=$day?></p>
+                <p><?=$day;?></p>
             </div>
         </div>
         
