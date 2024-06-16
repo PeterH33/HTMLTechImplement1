@@ -11,6 +11,9 @@ a:link, a:visited{
     padding: 0.5em;
 }
 
+p {
+    font-size: 2vw;
+}
 
 a:hover,
 a:active {
