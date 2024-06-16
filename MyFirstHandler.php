@@ -42,7 +42,7 @@
     </head>
     <header>
         <h1>
-        Your Order <small>from Skynet</small>
+        Your Order <h5 style="font-size: 6px">from skynet.</h5>
         </h1> 
     </header>
     
