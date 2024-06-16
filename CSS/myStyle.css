@@ -1,29 +1,6 @@
-#rcorners {
-    border-radius: 8px;
-    border: 10px solid black;
+/* Global Styles */
 
-}
-
-a:link, a:visited{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    padding: 0.5em;
-}
-
-p {
-    font-size: 60px;
-}
-
-a:hover,
-a:active {
-    background-color: rgb(215, 215, 215);
-    text-decoration: dashed;
-    padding: 0.5em;
-    border-radius: 0.2em;
-}
-
-header{
+header {
     margin-bottom: 9em;
 }
 
@@ -33,20 +10,27 @@ body {
     font-size: 24px;
 }
 
-footer{
+footer {
     margin-top: 11em;
 }
 
-hr {
-    border: 1px solid rgb(246, 246, 246);
-    
-}
+/* Default Element Styles */
 
 h1 {
     margin: 0px;
     font-size: 64px;
     font-weight: bold;
 }
+
+p {
+    font-size: 60px;
+}
+
+hr {
+    border: 1px solid rgb(246, 246, 246);
+}
+
+/* Layout Styles */
 
 .container {
     display: grid;
@@ -79,21 +63,10 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-
 }
-
-
-.menuIcon {
-    font-size: xx-large;
-    cursor: pointer;
-    padding: 0.5em;
-}
-
 
 .itemRightJustify {
     text-align: right;
-    /* align-items: right;
-    align-content: right; */
 }
 
 .span-2 {
@@ -104,7 +77,19 @@ h1 {
     grid-column: span 4;
 }
 
+/* Component Styles */
 
+#rcorners {
+    border-radius: 8px;
+    border: 10px solid black;
+
+}
+
+.menuIcon {
+    font-size: xx-large;
+    cursor: pointer;
+    padding: 0.5em;
+}
 
 .informationCollection {
     margin-bottom: -2em;
@@ -144,4 +129,22 @@ input[type=reset] {
 #me {
     width: 100%;
     max-height: 657px;
+}
+
+/* State Clases */
+
+a:link,
+a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+}
+
+a:hover,
+a:active {
+    background-color: rgb(215, 215, 215);
+    text-decoration: dashed;
+    padding: 0.5em;
+    border-radius: 0.2em;
 }
