@@ -41,12 +41,13 @@
         <link rel="stylesheet" href="CSS/myStyle.css">
     </head>
     <header>
-        <h1>
-        Your Order <h5 style="font-size: 6px">from skynet,a division of roboco lets destroy all humans together. You agree to be destroyed by the robot deployed to:</h5>
-        </h1> 
+         
     </header>
     
     <body>
+        <h1>
+        Your Order <h5 style="font-size: 6px">from skynet,a division of roboco lets destroy all humans together. You agree to be destroyed by the robot deployed to:</h5>
+        </h1>
         <div class="container">
             <div class="span-4">
                 <p><?= $firstName, " ", $lastName, " of:" ?></p>
