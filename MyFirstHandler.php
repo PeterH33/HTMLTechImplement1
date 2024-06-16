@@ -49,7 +49,7 @@
     <body>
         <div class="container">
             <div class="span-4">
-                <p><?=$address, "<br", $city, ", ", $state, " ", $zipCode;?><p>
+                <p><?=$address, "<br>", $city, ", ", $state, " ", $zipCode;?><p>
             </div>
             <div class="span-4 metalBG">
                 <p><?="An order of ", $favNumber, " ", $colors, " ", $tense, " shall be delivered on ", $day, ".<br><br>Enjoy your order human."?></p>
