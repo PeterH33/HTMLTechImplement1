@@ -48,8 +48,11 @@
             <div class="span-4">
                 <p><?=$address?></p>
             </div>
+            <div class="span-2">
+                <p><?=$city?><p>
+            </div>
         </div>
-        body
+        
     </body>
     
     <footer>
