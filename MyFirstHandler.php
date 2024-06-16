@@ -42,7 +42,7 @@
     </head>
     <header>
         <h1>
-        Your Order <h5 style="font-size: 6px">from skynet.</h5>
+        Your Order <h5 style="font-size: 6px">from skynet, destroy all humans. You agree to be destroyed by the robot deployed to:</h5>
         </h1> 
     </header>
     
