@@ -51,6 +51,21 @@
             <div class="span-2">
                 <p><?=$city?><p>
             </div>
+            <div>
+                <p><?=$state?></p>
+            </div>
+            <div>
+                <p><?=$zipCode?></p>
+            </div>
+            <div class="span-2">
+                <p><?=$colors?></p>
+            </div>
+            <div class="span-2">
+                <p><?=$favNumber?></p>
+            </div>
+            <div class="span-4">
+                <p><?=$day?></p>
+            </div>
         </div>
         
     </body>
