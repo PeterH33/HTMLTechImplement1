@@ -70,8 +70,7 @@
                 <p><?=$day;?></p>
             </div>
             <div class="item span-4 ">
-                <input type="submit" name="submit" value="Submit">
-                <input type="reset">
+                <input type="submit" name="submit" value="Edit">
             </div>
         </div>
         
