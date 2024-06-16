@@ -52,8 +52,8 @@
             <div class="span-4">
                 <p><?=$firstName, " ", $lastName, " of:<br>", $address, "<br>", $city, ", ", $state, " ", $zipCode;?><p>
             </div>
-            <div class="span-4 metalBG">
-                <p style="background-color: <?=$colors?>"><?="An order of ", $favNumber, " ", $colors, " ", $tense, " shall be delivered on ", $day, ".<br><br>Enjoy your order human."?></p>
+            <div class="span-4 metalBG" style="background-color: <?=$colors?>">
+                <p><?="An order of ", $favNumber, " ", $colors, " ", $tense, " shall be delivered on ", $day, ".<br><br>Enjoy your order human."?></p>
             </div>
             <div class="span-4 ">
                 <input type="submit" name="submit" value="Edit Order">
