@@ -50,6 +50,7 @@
         <div class="container">
             <div class="span-4">
                 <h4><?=$address;?></h4>
+                <p>Test words</p>
             </div>
             <div class="span-2">
                 <p><?=$city;?><p>
