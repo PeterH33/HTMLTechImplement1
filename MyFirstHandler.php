@@ -38,7 +38,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="CSS/myStyle.css">
+        <!-- <link rel="stylesheet" href="CSS/myStyle.css"> -->
     </head>
     <header>
         <h1>
