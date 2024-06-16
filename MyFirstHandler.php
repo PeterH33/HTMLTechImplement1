@@ -36,7 +36,9 @@
 
 <!-- Output -->
 <html>
-<link rel="stylesheet" href="CSS/myStyle.css">
+    <head>
+        <link rel="stylesheet" href="CSS/myStyle.css">
+    </head>
     <header>
         <h1>
         <?= $firstName, " ", $lastName; ?>
