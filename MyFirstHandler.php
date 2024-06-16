@@ -69,6 +69,10 @@
             <div class="span-4">
                 <p><?=$day;?></p>
             </div>
+            <div class="item span-4 ">
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset">
+            </div>
         </div>
         
     </body>
