@@ -49,7 +49,7 @@
     <body>
         <div class="container">
             <div class="span-4">
-                <p><?=$address;?></p>
+                <h4><?=$address;?></h4>
             </div>
             <div class="span-2">
                 <p><?=$city;?><p>
