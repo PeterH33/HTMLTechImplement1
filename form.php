@@ -1,6 +1,10 @@
 <?php
 
+
+
 ?>
+
+
 <html>
 <link rel="stylesheet" href="CSS/myStyle.css">
 
@@ -38,6 +42,7 @@
                 <div class="item span-2">
                     First Name
                     <br>
+                    <!-- Note added required attribute and now the field must be filled out. -->
                     <input type="text" name="firstName" id="firstName" required>
                 </div>
                 <div class="item span-2">
@@ -90,7 +95,7 @@
                 </div>
                 <div class="item span-4">
                     <div class="dayContainer">
-                        <div class="item"><input type="radio" name="day" value="monday" id="mondayb" required>
+                        <div class="item"><input type="radio" name="day" value="monday" id="monday" required>
                             <label for="monday">Mon</label>
                         </div>
 

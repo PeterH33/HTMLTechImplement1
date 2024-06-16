@@ -39,7 +39,7 @@
 <link rel="stylesheet" href="CSS/myStyle.css">
     <header>
         <h1>
-        <?= $firstName, $lastName; ?>
+        <?= $firstName, " ", $lastName; ?>
         </h1> 
     </header>
     
