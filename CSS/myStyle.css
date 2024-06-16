@@ -95,6 +95,10 @@ hr {
     margin-bottom: -2em;
 }
 
+.metalBG{
+    background-color: darkgray;
+}
+
 input[type=text] {
     width: 100%;
     height: 48px;

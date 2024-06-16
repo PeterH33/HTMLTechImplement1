@@ -57,7 +57,7 @@
             <div class="span-4">
                 <p><?="An order of ", $favNumber, " ", $colors, " ", $tense, " shall be delivered on ", $day, ".<br>Enjoy your order human."?></p>
             </div>
-            <div class="item span-4 ">
+            <div class="span-4 metalBG">
                 <input type="submit" name="submit" value="Edit Order">
             </div>
         </div>
