@@ -44,6 +44,11 @@
     </header>
     
     <body>
+        <div class="container">
+            <div class="span-4">
+                <p><?=$address?></p>
+            </div>
+        </div>
         body
     </body>
     
