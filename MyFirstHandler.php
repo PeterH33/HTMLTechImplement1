@@ -14,15 +14,15 @@
 //input
 // NOTE we can use nil coalescing in PHP! Wonderful!
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
-        $firstName = $_POST['firstName'] ?? $firstName;
-        $lastName = $_POST['lastName'] ?? $lastName;
-        $address = $_POST['address'] ?? $address;
-        $city = $_POST['city'] ?? $city;
-        $state = $_POST['state'] ?? $state;
-        $zipCode = $_POST['zipCode'] ?? $zipCode;
-        $colors = $_POST['colors'] ?? $colors;
-        $favNumber = $_POST['favNumber'] ?? $favNumber;
-        $day = $_POST['day'] ?? $day;
+        $firstName = sanitizeString($_POST['firstName']) ?? $firstName;
+        $lastName = sanitizeString ($_POST['lastName']) ?? $lastName;
+        $address = sanitizeString ($_POST['address']) ?? $address;
+        $city = sanitizeString ($_POST['city']) ?? $city;
+        $state = sanitizeString ($_POST['state']) ?? $state;
+        $zipCode = sanitizeString ($_POST['zipCode']) ?? $zipCode;
+        $colors = sanitizeString ($_POST['colors']) ?? $colors;
+        $favNumber = sanitizeString ($_POST['favNumber']) ?? $favNumber;
+        $day = sanitizeString ($_POST['day']) ?? $day;
     }
 
 //processing
@@ -30,7 +30,14 @@
 
 //NOTE Experimenting with the layout of a blended php html paper. 
 //I think I like this layout better, it lets VSCodes auto complete continue working
-
+function sanitizeString($var)
+{
+    if (get_magic_quotes_gpc())
+        $var = stripslashes($var);
+    $var = strip_tags($var);
+    $var = htmlentities($var);
+    return $var;
+}
 ?>
 
 

@@ -1,5 +1,7 @@
 <?php
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
+    }
 
 
 ?>
@@ -34,8 +36,6 @@
     <form action="MyFirstHandler.php" method="post">
         <div class="conatiner2x1">
             <div class="container">
-                <!-- <div class="item span-4 noMarginBottom" style="position: relative;">
-                    <h1 style="position: absolute;">Information Collection</h1> -->
                 <div class="item span-4 informationCollection">
                     <h1>Information Collection</h1>
                 </div>
