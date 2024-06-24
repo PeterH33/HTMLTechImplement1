@@ -32,7 +32,7 @@
 //I think I like this layout better, it lets VSCodes auto complete continue working
 function sanitizeString($var)
 {
-    if (get_magic_quotes_gpc())
+    // if (get_magic_quotes_gpc())
         $var = stripslashes($var);
     $var = strip_tags($var);
     $var = htmlentities($var);
