@@ -1,10 +1,3 @@
-<?php
-    if($_SERVER['REQUEST_METHOD'] === 'POST'){
-
-    }
-
-
-?>
 
 
 <html>
@@ -30,10 +23,15 @@
 </header>
 
 <body>
+<?php
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        print"POST was used in request";
+    }
+?>
 
 
 
-    <form action="MyFirstHandler.php" method="post">
+    <form action="form.php" method="post">
         <div class="conatiner2x1">
             <div class="container">
                 <div class="item span-4 informationCollection">
