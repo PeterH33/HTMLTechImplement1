@@ -2,7 +2,7 @@
 function sanitizeString($var)
 {
     // if (get_magic_quotes_gpc())
-        $var = stripslashes($var);
+    $var = stripslashes($var);
     $var = strip_tags($var);
     $var = htmlentities($var);
     return $var;
@@ -36,9 +36,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $SQLString = "CALL insertPerson('$firstName', '$lastName', '$address', '$city', '$state', '$zipCode', '$colors', '$favNumber', '$day')";
         //this is the code to insert the values and report if it doesn't happen
         if(mysqli_query($DBConnect, $SQLString))
-            print"Record created:";
+            $confirmation = "Record created:";
         else
-            print"There was an error on insert";
+            $confirmation = "There was an error on insert";
 
     }
     mysqli_close($DBConnect);
@@ -70,13 +70,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 </header>
 
 <body>
-<?php
-    if($_SERVER['REQUEST_METHOD'] === 'POST'){
-        print"POST was used in request";
-    }
-?>
-
-
 
     <form action="form.php" method="post">
         <div class="conatiner2x1">
@@ -179,6 +172,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             <div style="max-width: 40em;"><img src="me.jpg" id="me"></div>
         </div>
     </form>
+    <p><?= $confirmation?></p>
 
 </body>
 
