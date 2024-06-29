@@ -58,14 +58,23 @@ function sanitizeString($var)
             $queryResult = mysqli_query($DBConnect, $SQLString);
             $row = mysqli_fetch_assoc($queryResult);
             $numberOfPersons = $row['numberOfPersons'];
-            echo "<p>There are " . $numberOfPersons . "who love the color red.</p>"
+            echo "<p>There are " . $numberOfPersons . " persons who love the color red.</p>";
         }
         mysqli_free_result($queryResult);
         mysqli_close($DBConnect);
     ?>
+
     <!-- Search button here -->
+    <form action="search.php" method="post">
+    <input type="text" name="searchTerm" id="searchField">
+    <input type="submit" value="Submit">
+    </form>
 
     <!-- Delete Button here -->
+    <form action="gone.php" method="post">
+    <input type="text" name="deleteThis" id="deleteField">
+    <input type="submit" value="Submit">
+    </form>
 
     <?php
     // This section for the table
