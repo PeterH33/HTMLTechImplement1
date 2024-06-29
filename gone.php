@@ -86,6 +86,15 @@ function sanitizeString($var)
     } else {
         // Successful dbConnect logic here
 
+        $deleteThis = sanitizeString($_POST['deleteThis']);
+        $SQLString = "DELETE from persons where personID = '$deleteThis'";
+        $queryResult = mysqli_query ($DBConnect, $SQLString);
+        if(mysqli_affected_rows($DBConnect) > 0){
+            print"Record has been deleted";
+        } else {
+            print"That record does not exist";
+        }
+        
         // Default Show everything
         $SQLString = "SELECT 
         p.personID, 
@@ -112,7 +121,7 @@ function sanitizeString($var)
 
         if (mysqli_num_rows($queryResult) > 0) {
             // Success print something
-            echo "List of Records";
+            
             echo "<table width='100%'>";
             echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>City</th><th>State</th><th>Zip Code</th><th>Favorite Color</th><th>Favorite Day</th><th>Favorite Number</th><th>Time Stamp</th></tr>";
             while ($row = mysqli_fetch_assoc($queryResult)) {
