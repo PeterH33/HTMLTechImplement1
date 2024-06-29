@@ -59,7 +59,7 @@ function sanitizeString($var)
             print"<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>City</th><th>State</th><th>Zip Code</th><th>Favorite Color</th><th>Favorite Number</th><th>Favorite Day</th><th>Time Stamp</th></tr>";
             while ($row = mysqli_fetch_assoc($queryResult)){
                 //Table lines
-                print"<tr> <td>{$row['p.personID']}</td> <td>{$row['p.firstName']}</td> <td>{$row['p.lastName']}</td> <td>{$row['p.address']}</td> <td>{$row['c.city']}</td> <td>{$row['s.state']}</td> <td>{$row['z.zipCode']}</td> <td>{$row['co.color']}</td> <td>{$row['d.day']}</td> <td>{$row['p.favNumber']}</td> <td>{$row['p.tx']}</td>  </tr>";
+                print"<tr> <td>{$row['personID']}</td> <td>{$row['firstName']}</td> <td>{$row['lastName']}</td> <td>{$row['address']}</td> <td>{$row['cityName']}</td> <td>{$row['stateName']}</td> <td>{$row['zipCode']}</td> <td>{$row['favoriteColor']}</td> <td>{$row['favoriteDay']}</td> <td>{$row['favNumber']}</td> <td>{$row['ts']}</td>  </tr>";
             }
         } else {
             //failure state
