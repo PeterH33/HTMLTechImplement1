@@ -64,7 +64,7 @@ function sanitizeString($var)
         if (mysqli_num_rows($queryResult) > 0){
             //success print something
             print"List of Records";
-            print"<table width = '100%' border = '1'>";
+            print"<table width = '100%'>";
             print"<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>City</th><th>State</th><th>Zip Code</th><th>Favorite Color</th><th>Favorite Number</th><th>Favorite Day</th><th>Time Stamp</th></tr>";
             while ($row = mysqli_fetch_assoc($queryResult)){
                 //Table lines
