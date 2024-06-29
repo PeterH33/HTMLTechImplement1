@@ -23,7 +23,24 @@ function sanitizeString($var)
     </style>
     <title>Records</title>
 </head>
+
+
 <body>
+    <header>
+        <!--Style Override right here-->
+        <h1 style="font-weight: normal;">My Form</h1>
+        <!--Navigation-->
+        <div id="nav">
+            <!-- &#9776; -->
+            <a href="index.html">Home</a>
+            <a href="videos.html">Video</a>
+            <a href="photos.html">My Photos</a>
+            <a href="form.php">My Form</a>
+            <a href="pages/page5.html">Folder Page</a>
+            <a href="records.php">Records</a>
+        </div>
+        <hr>
+    </header>
 
     <?php
     // This section for the table
