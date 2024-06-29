@@ -113,13 +113,22 @@ function sanitizeString($var)
         if (mysqli_num_rows($queryResult) > 0) {
             // Success print something
             echo "List of Records";
-            echo "<table width='100%'>";
-            echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>City</th><th>State</th><th>Zip Code</th><th>Favorite Color</th><th>Favorite Day</th><th>Favorite Number</th><th>Time Stamp</th></tr>";
+            //*********PHP Version**********
+            // echo "<table width='100%'>";
+            // echo "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>City</th><th>State</th><th>Zip Code</th><th>Favorite Color</th><th>Favorite Day</th><th>Favorite Number</th><th>Time Stamp</th></tr>";
+            // while ($row = mysqli_fetch_assoc($queryResult)) {
+            //     // Table lines
+            //     echo "<tr><td>{$row['personID']}</td><td>{$row['firstName']}</td><td>{$row['lastName']}</td><td>{$row['address']}</td><td>{$row['cityName']}</td><td>{$row['stateName']}</td><td>{$row['zipCode']}</td><td>{$row['favoriteColor']}</td><td>{$row['favoriteDay']}</td><td>{$row['favNumber']}</td><td>{$row['ts']}</td></tr>";
+            // }
+            // echo "</table>";
+
+            //*******JS Experiment for sorting on client side*******
+            echo "<table id='myTable' width='100%'>";
+            echo "<thead><tr><th onclick='sortTable(0)'>ID</th><th onclick='sortTable(1)'>First Name</th><th onclick='sortTable(2)'>Last Name</th><th onclick='sortTable(3)'>Address</th><th onclick='sortTable(4)'>City</th><th onclick='sortTable(5)'>State</th><th onclick='sortTable(6)'>Zip Code</th><th onclick='sortTable(7)'>Favorite Color</th><th onclick='sortTable(8)'>Favorite Day</th><th onclick='sortTable(9)'>Favorite Number</th><th onclick='sortTable(10)'>Time Stamp</th></tr></thead><tbody>";
             while ($row = mysqli_fetch_assoc($queryResult)) {
-                // Table lines
                 echo "<tr><td>{$row['personID']}</td><td>{$row['firstName']}</td><td>{$row['lastName']}</td><td>{$row['address']}</td><td>{$row['cityName']}</td><td>{$row['stateName']}</td><td>{$row['zipCode']}</td><td>{$row['favoriteColor']}</td><td>{$row['favoriteDay']}</td><td>{$row['favNumber']}</td><td>{$row['ts']}</td></tr>";
             }
-            echo "</table>";
+            echo "</tbody></table>";
         } else {
             // Failure state
             echo "Error: no results found.";
@@ -141,6 +150,45 @@ function sanitizeString($var)
         <br>
         HTML and Server/Technology Implementation
     </footer>
+
+    <script>
+        function sortTable(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("myTable");
+            switching = true;
+            dir = "asc"; 
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    switchcount ++; 
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+    </script>
 
 </body>
 </html>
