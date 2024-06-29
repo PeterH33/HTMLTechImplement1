@@ -9,6 +9,7 @@ function sanitizeString($var)
 ?>
 
 <html>
+<link rel="stylesheet" href="CSS/myStyle.css">
 <head>
     <style>
         th, td {
@@ -87,7 +88,9 @@ function sanitizeString($var)
 
 
 </body>
-
+<footer>
+    <?php include 'footer.htm';?>
+</footer>
 
 
 
