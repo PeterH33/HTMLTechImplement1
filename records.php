@@ -15,6 +15,7 @@ function sanitizeString($var)
     <style>
         th, td {
             border-bottom: 1px solid gray;
+            text-align: left;
         }
         table, th, td {
             border-collapse: collapse;
@@ -28,7 +29,7 @@ function sanitizeString($var)
 <body>
     <header>
         <!--Style Override right here-->
-        <h1 style="font-weight: normal;">My Form</h1>
+        <h1 style="font-weight: normal;">Records</h1>
         <!--Navigation-->
         <div id="nav">
             <!-- &#9776; -->
@@ -41,6 +42,30 @@ function sanitizeString($var)
         </div>
         <hr>
     </header>
+
+    <!-- Section for the information search, easy check of count red -->
+    <?php
+        $DBConnect = mysqli_connect("127.0.0.1", "sqlimp", "pword", "mysqlimp");
+        if ($DBConnect == false) {
+            // DB error here
+            echo "Failed to connect to the database.";
+        } else {
+            $SQLString = "SELECT COUNT(*) AS numberOfPersons
+            FROM persons p
+            JOIN colors co ON p.colorKey = co.colorKey
+            WHERE co.color = 'red'
+            ";
+            $queryResult = mysqli_query($DBConnect, $SQLString);
+            $row = mysqli_fetch_assoc($queryResult);
+            $numberOfPersons = $row['numberOfPersons'];
+            echo "<p>There are " . $numberOfPersons . "who love the color red.</p>"
+        }
+        mysqli_free_result($queryResult);
+        mysqli_close($DBConnect);
+    ?>
+    <!-- Search button here -->
+
+    <!-- Delete Button here -->
 
     <?php
     // This section for the table
