@@ -173,7 +173,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             <div style="max-width: 40em;"><img src="me.jpg" id="me"></div>
         </div>
     </form>
-    <p><?= $confirmation?></p>
+    <p><?= $confirmation ?? ""?></p>
 
 </body>
 
