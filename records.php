@@ -10,6 +10,15 @@ function sanitizeString($var)
 
 <html>
 <head>
+    <style>
+        th, td {
+            border-bottom: 1px solid gray;
+        }
+        table, th, td{
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
     <title>Records</title>
 </head>
 
