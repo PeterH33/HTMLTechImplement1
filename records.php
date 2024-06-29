@@ -66,7 +66,7 @@ function sanitizeString($var)
             //success print something
             print"List of Records";
             print"<table width = '100%'>";
-            print"<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>City</th><th>State</th><th>Zip Code</th><th>Favorite Color</th><th>Favorite Number</th><th>Favorite Day</th><th>Time Stamp</th></tr>";
+            print"<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Address</th><th>City</th><th>State</th><th>Zip Code</th><th>Favorite Color</th><th>Favorite Day</th><th>Favorite Number</th><th>Time Stamp</th></tr>";
             while ($row = mysqli_fetch_assoc($queryResult)){
                 //Table lines
                 print"<tr> <td>{$row['personID']}</td> <td>{$row['firstName']}</td> <td>{$row['lastName']}</td> <td>{$row['address']}</td> <td>{$row['cityName']}</td> <td>{$row['stateName']}</td> <td>{$row['zipCode']}</td> <td>{$row['favoriteColor']}</td> <td>{$row['favoriteDay']}</td> <td>{$row['favNumber']}</td> <td>{$row['ts']}</td>  </tr>";
@@ -86,11 +86,21 @@ function sanitizeString($var)
 
     
 
+<footer>
+    <hr>
+
+    <div>
+        <div>
+            <img src="FSUlogo.png" alt="">
+
+        </div>
+        <br>
+        HTML and Server/Technology Implementation
+    </div>
+</footer>
+
 
 </body>
-<footer>
-    <?php include 'footer.htm';?>
-</footer>
 
 
 
