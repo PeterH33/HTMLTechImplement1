@@ -36,9 +36,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $SQLString = "CALL insertPerson('$firstName', '$lastName', '$address', '$city', '$state', '$zipCode', '$colors', '$favNumber', '$day')";
         //this is the code to insert the values and report if it doesn't happen
         if(mysqli_query($DBConnect, $SQLString))
-            $confirmation = "Record created:";
+            $confirmation = "Record created";
         else
-            $confirmation = "There was an error on insert";
+            $confirmation = "There was an error on insert: Record not created";
 
     }
     mysqli_close($DBConnect);
@@ -65,6 +65,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         <a href="photos.html">My Photos</a>
         <a href="form.php">My Form</a>
         <a href="pages/page5.html">Folder Page</a>
+        <a href="records.php">Records</a>
     </div>
     <hr>
 </header>
