@@ -35,7 +35,7 @@ require 'creepydb.php';
     // VALUES (?, ?, ?, ?, ?, ?)");
     // $stmt->bind_param('sddsss', $ipAddress, $lat, $lon, $city, $region, $isp);
     // $stmt->execute();
-    $stmt->close();
+    // $stmt->close();
 $mysqli->close();
 
 ?>
