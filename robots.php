@@ -31,10 +31,22 @@ require 'creepydb.php';
     $ipapiString = "http://ip-api.com/json/{$ipAddress}";
     //this form requires changing the php settings and is less secure, will try curl next
     // $response = file_get_contents($ipapiString);
-    $curlsess = curl_init();
-    curl_setopt($curlsess, CURLOPT_URL, $ipapiString);
-    curl_setopt($curlsess, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($curlsess);
+
+    //The curl_exec function is disabled for security reasons, will explore context next
+    // $curlsess = curl_init();
+    // curl_setopt($curlsess, CURLOPT_URL, $ipapiString);
+    // curl_setopt($curlsess, CURLOPT_RETURNTRANSFER, true);
+    // $response = curl_exec($curlsess);
+
+    $context = stream_context_create([
+        'http' => [
+            'method' => 'GET',
+            'header' => 'User-Agent: PHP'
+        ]
+    ]);
+
+    $response = file_get_contents($ipapiString, false, $context);
+
     //json to assoc array
     $assocArr = json_decode($response, true);
 
