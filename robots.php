@@ -70,7 +70,7 @@ $mysqli->close();
     </header>
 
     <main>
-        <p>Thank you for participating in the human elimination project human number ID of <?= $ipAddress?></p>
+        <p>Thank you for participating in the human elimination project human of <?= $ipAddress?></p>
         <p>A T-32000 squad has been dispatched to <?= $city . ", " . $region . " " . $lat . " " . $lon?> to eliminate all organics.</p>
         <p>And a special thanks to <?= $isp?> for continuing to support this noble cause.</p>
 
