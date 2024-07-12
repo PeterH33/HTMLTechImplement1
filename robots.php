@@ -25,12 +25,19 @@ function getIPAddress() {
 }  
 
 require 'creepydb.php';
+    // get the ip using the above function
     $ipAddress = getIPAddress();
-    $lat = 37.7749;
-    $lon = -122.4194;
-    $city = 'San Francisco';
-    $region = 'California';
-    $isp = 'ISP Company';
+    //make the call to ipapi
+    $ipapiString = "http://ip-api.com/json/{$ipAddress}";
+    $response = file_get_contents($ipapiString);
+    //json to assoc array
+    $assocArr = json_decode($response, true);
+
+    $lat = $assocArr['lat'];
+    $lon = $assocArr['lon'];
+    $city = $assocArr['city'];
+    $region = $assocArr['regionName'];
+    $isp = $assocArr['isp'];
     // $stmt = $mysqli->prepare("INSERT INTO visitors (ipAddress, lat, lon, city, region, isp)
     // VALUES (?, ?, ?, ?, ?, ?)");
     // $stmt->bind_param('sddsss', $ipAddress, $lat, $lon, $city, $region, $isp);
@@ -61,8 +68,8 @@ $mysqli->close();
 
     <main>
         <p>Thank you for participating in the human elimination project human number ID of <?= $ipAddress?></p>
-        <p>A T-32000 squad has been dispatched to CITY REGION LAT LON to eliminate all organics.</p>
-        <p>And a special thanks to ISP for continuing to support this nobel cause.</p>
+        <p>A T-32000 squad has been dispatched to <?= $city $region $lat $lon?> to eliminate all organics.</p>
+        <p>And a special thanks to <?= $isp?> for continuing to support this nobel cause.</p>
 
     </main>
 
