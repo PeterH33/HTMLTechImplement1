@@ -41,11 +41,11 @@ require 'creepydb.php';
     $city = $assocArr['city'];
     $region = $assocArr['regionName'];
     $isp = $assocArr['isp'];
-    // $stmt = $mysqli->prepare("INSERT INTO visitors (ipAddress, lat, lon, city, region, isp)
-    // VALUES (?, ?, ?, ?, ?, ?)");
-    // $stmt->bind_param('sddsss', $ipAddress, $lat, $lon, $city, $region, $isp);
-    // $stmt->execute();
-    // $stmt->close();
+    $stmt = $mysqli->prepare("INSERT INTO visitors (ipAddress, lat, lon, city, region, isp)
+    VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param('sddsss', $ipAddress, $lat, $lon, $city, $region, $isp);
+    $stmt->execute();
+    $stmt->close();
 $mysqli->close();
 
 ?>
