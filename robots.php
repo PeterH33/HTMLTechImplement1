@@ -30,6 +30,7 @@ require 'creepydb.php';
     //make the call to ipapi
     $ipapiString = "http://ip-api.com/json/{$ipAddress}";
 
+    //I fell down a hole reading about and thinking about security with this command again. Interesting stuff that distracts me for a couple hours every time.
     $response = file_get_contents($ipapiString);
 
     //json to assoc array
@@ -53,7 +54,7 @@ $mysqli->close();
 <html>
 <head>
     <title>Sending Robot</title>
-    <link rel="stylesheet" href="CSS/mainStyle.css">
+    <link rel="stylesheet" href="CSS/myStyle.css">
 </head>
 <body>
     <header>
@@ -71,7 +72,7 @@ $mysqli->close();
     <main>
         <p>Thank you for participating in the human elimination project human number ID of <?= $ipAddress?></p>
         <p>A T-32000 squad has been dispatched to <?= $city . ", " . $region . " " . $lat . " " . $lon?> to eliminate all organics.</p>
-        <p>And a special thanks to <?= $isp?> for continuing to support this nobel cause.</p>
+        <p>And a special thanks to <?= $isp?> for continuing to support this noble cause.</p>
 
     </main>
 
